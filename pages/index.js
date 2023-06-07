@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Hero from '../components/Hero'
 import Slider from '../components/Slider'
 import Provide from '../components/Provide'
+import Statics from '../components/Statics'
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero/>
         {/* <Slider/> */}
         <Provide/>
+        <Statics/>
       </main>
 
       

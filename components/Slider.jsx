@@ -18,7 +18,7 @@ const CardSwiper = ({ card }) => {
   );
 };
 
-const Slider = ({ cards }) => {
+const Slider = () => {
   return (
     <Swiper navigation pagination={{ clickable: true }}>
       {cards.map((card, index) => (

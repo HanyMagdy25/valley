@@ -6,3 +6,14 @@
 body {
   direction: rtl !important;
 }
+
+/* Swiper */
+.swiper-pagination-bullet{
+background-color: white !important;
+opacity: 1 !important
+;
+}
+.swiper-pagination-bullet-active{
+  width: 35px !important;
+  border-radius: 20px !important;
+}
