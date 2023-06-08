@@ -21,6 +21,7 @@ const Hero = () => {
         }}
         modules={[Pagination]}
         className="mySwiper"
+        loop={true}
       >
         <SwiperSlide>
           <div>
@@ -29,6 +30,7 @@ const Hero = () => {
                 src={heroImage}
                 alt="hero"
                 className="w-full h-full object-cover"
+                priority
               />
             </div>
           </div>
@@ -40,6 +42,7 @@ const Hero = () => {
                 src={heroImage1}
                 alt="hero"
                 className="w-full h-full object-cover"
+                priority
               />
             </div>
           </div>
@@ -51,6 +54,7 @@ const Hero = () => {
                 src={heroImage}
                 alt="hero"
                 className="w-full h-full object-cover"
+                priority
               />
             </div>
           </div>

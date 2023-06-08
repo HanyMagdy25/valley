@@ -4,6 +4,7 @@ import Hero from '../components/Hero'
 import Slider from '../components/Slider'
 import Provide from '../components/Provide'
 import Statics from '../components/Statics'
+import Advantages from '../components/Advantages'
 
 
 export default function Home() {
@@ -17,9 +18,10 @@ export default function Home() {
 
       <main className='direction-rtl'>
         <Hero/>
-        {/* <Slider/> */}
+        <Slider/>
         <Provide/>
-        <Statics/>
+        {/* <Statics/> */}
+        <Advantages/>
       </main>
 
       
