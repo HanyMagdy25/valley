@@ -54,7 +54,7 @@ const Navbar = () => {
   return (
     <header
       className="w-full font-medium flex items-center justify-between
-      relative px-8 py-1 lg:py-9  z-10  md:px-12 sm:px-8"
+      relative px-8 py-1  z-10  md:px-12 sm:px-8"
     >
       <button
         className="flex lg:hidden flex-col justify-center items-center"
@@ -83,10 +83,13 @@ const Navbar = () => {
           <CustomLink href="/about" title="من نحن" className="mx-4" />
           <CustomLink href="/projects" title="مشاريعنا" className="mx-4" />
         </nav>
-        NameLogo2
-        <nav className="flex items-center justify-center flex-wrap">
+        <span className="">
+          <Image src={logoImage} alt="logoImage" className="w-28" />
+        </span>
+       
+        {/* <nav className="flex items-center justify-center flex-wrap">
           TwitterIcon2525
-        </nav>
+        </nav> */}
       </div>
 
       {isOpen ? (
@@ -132,7 +135,7 @@ const Navbar = () => {
       {/* <Logo /> */}
       <div className="flex lg:hidden ">
         <span className="text-2xl font-bold">
-          <Image src={logoImage} alt="logoImage" className="w-32" />
+          <Image src={logoImage} alt="logoImage" className="w-24" />
         </span>
       </div>
     </header>

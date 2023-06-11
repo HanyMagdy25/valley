@@ -36,7 +36,7 @@ const Footer = () => {
                   key={item.id}
                   class="bg-white text-lightBlue-600 shadow-lg font-normal 
                     h-10 w-10 flex items-center justify-center align-center rounded-full 
-                    cursor-pointer ml-2"
+                    cursor-pointer"
                 >
                   <Image
                     src={item.image}

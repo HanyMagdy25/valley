@@ -83,7 +83,7 @@ const Advantages = () => {
         {advData.map((item) => (
           <div
             key={item.id}
-            className="rounded-md border border-gray-200 bg-white px-8 py-5 shadow-sm"
+            className="rounded-md border border-gray-200 bg-white px-8 py-2 md:py-5 shadow-sm"
           >
             <div className="my-2 flex items-center">
               <div className="ml-4 flex h-12 w-12 items-center justify-center rounded-lg border bg-blue-50 text-2xl text-blue-500">
