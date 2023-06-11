@@ -5,6 +5,9 @@ import Slider from '../components/Slider'
 import Provide from '../components/Provide'
 import Statics from '../components/Statics'
 import Advantages from '../components/Advantages'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import Whats from '../components/Whats'
 
 
 export default function Home() {
@@ -17,11 +20,14 @@ export default function Home() {
       </Head>
 
       <main className='direction-rtl'>
+        <Navbar/>
         <Hero/>
         <Slider/>
         <Provide/>
         {/* <Statics/> */}
         <Advantages/>
+        <Footer/>
+        <Whats/>
       </main>
 
       
