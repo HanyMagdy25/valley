@@ -9,7 +9,7 @@ const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
 
   return (
-    <Link href={href} className={`${className} relative group`}>
+    <Link href={href} className={`${className} relative group text-lg`}>
       {title}
 
       <span
@@ -54,7 +54,7 @@ const Navbar = () => {
   return (
     <header
       className="w-full font-medium flex items-center justify-between
-      relative px-8 py-1  z-10  md:px-12 sm:px-8"
+      relative px-8 py-1  z-10  md:px-12 sm:px-8 shadow-lg" 
     >
       <button
         className="flex lg:hidden flex-col justify-center items-center"
@@ -77,19 +77,21 @@ const Navbar = () => {
         ></span>
       </button>
 
-      <div className="w-full justify-between items-center hidden lg:flex">
-        <nav>
-          <CustomLink href="/" title="الرئيسية" className="mr-4" />
-          <CustomLink href="/about" title="من نحن" className="mx-4" />
-          <CustomLink href="/projects" title="مشاريعنا" className="mx-4" />
-        </nav>
-        <span className="">
-          <Image src={logoImage} alt="logoImage" className="w-28" />
-        </span>
-       
-        {/* <nav className="flex items-center justify-center flex-wrap">
+      <div className="w-full  hidden lg:flex">
+        <div className="container m-auto px-6 flex justify-between items-center">
+          <nav>
+            <CustomLink href="/" title="الرئيسية" className="mr-4" />
+            <CustomLink href="/about" title="من نحن" className="mx-4" />
+            <CustomLink href="/projects" title="مشاريعنا" className="mx-4" />
+          </nav>
+          <span className="">
+            <Image src={logoImage} alt="logoImage" className="w-28" />
+          </span>
+
+          {/* <nav className="flex items-center justify-center flex-wrap">
           TwitterIcon2525
         </nav> */}
+        </div>
       </div>
 
       {isOpen ? (

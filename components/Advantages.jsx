@@ -65,35 +65,41 @@ const advData = [
 ];
 const Advantages = () => {
   return (
-    <section className="mx-auto px-6 text-gray-800 md:max-w-screen-xl">
-      <div className="mx-auto mt-20 mb-14 block px-6 text-center">
-        <h2 className="mx-auto text-4xl font-bold md:text-4xl">مميزات المشروع</h2>
-        {/* <div className="mx-auto mt-6 mb-auto block w-full text-xl font-normal leading-9 text-gray-700 md:w-3/4 xl:w-3/4">
+    <section className="text-gray-800">
+      <div className="container m-auto px-6">
+        <div className="mx-auto mt-20 mb-14 block px-6 text-center">
+          <h2 className="mx-auto text-4xl font-bold md:text-4xl ">
+            مميزات المشروع
+          </h2>
+          {/* <div className="mx-auto mt-6 mb-auto block w-full text-xl font-normal leading-9 text-gray-700 md:w-3/4 xl:w-3/4">
           <p className="text-lg">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
             provident repellat cupiditate blanditiis! Sit temporibus doloremque
             molestias, aut necessitatibus quisquam non deleniti debitis aperiam
             ullam! Repudiandae, debitis iure libero reiciendis ducimus
             temporibus!
-          </p>
-        </div> */}
-      </div>
+            </p>
+          </div> */}
+        </div>
 
-      <div className="grid gap-4 md:gap-8 pb-20 sm:grid-cols-2 lg:grid-cols-3">
-        {advData.map((item) => (
-          <div
-            key={item.id}
-            className="rounded-md border border-gray-200 bg-white px-8 py-2 md:py-5 shadow-sm"
-          >
-            <div className="my-2 flex items-center">
-              <div className="ml-4 flex h-12 w-12 items-center justify-center rounded-lg border bg-blue-50 text-2xl text-blue-500">
-                <Image src={item.image} alt="floorImage" priority />
+        <div className="grid gap-4 md:gap-6 pb-20 sm:grid-cols-2 lg:grid-cols-3">
+          {advData.map((item) => (
+            <div
+              key={item.id}
+              className="rounded-md border border-gray-200 bg-white px-8 py-2 md:py-3 shadow-sm"
+            >
+              <div className="my-2 flex items-center">
+                <div className="ml-4 flex h-12 w-12 items-center justify-center rounded-lg border bg-blue-50 text-2xl text-blue-500">
+                  <Image src={item.image} alt="floorImage" priority />
+                </div>
+                <h3 className="text-2xl font-semibold md:text-xl">
+                  {item.title}
+                </h3>
               </div>
-              <h3 className="text-2xl font-semibold md:text-xl">{item.title}</h3>
+              <p className="text-gray-600  font-semibold">{item.desc}</p>
             </div>
-            <p className="text-gray-600  font-semibold">{item.desc}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

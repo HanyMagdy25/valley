@@ -19,6 +19,9 @@ module.exports = {
       boxShadow: {
         custom: "0 2px 10px 2px rgba(21, 44, 88, 0.2)",
       },
+      fontFamily: {
+        cairo: ["var(--font-cairo)", "sans-serif"],
+      },
     },
   },
   plugins: [],

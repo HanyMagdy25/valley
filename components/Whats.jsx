@@ -1,12 +1,12 @@
 import Image from "next/image";
-import whatsImage from "../assets/social/whatsapp.png"
+import whatsImage from "../assets/social/whatsapp.png";
 
 const Whats = () => {
   return (
     <span
       class="bg-secondColor text-lightBlue-600 shadow-lg font-normal 
             h-14 w-14 flex items-center justify-center align-center rounded-full 
-            cursor-pointer ml-2 fixed bottom-8 right-4"
+            cursor-pointer ml-2 fixed bottom-8 right-4 z-50"
     >
       <Image
         src={whatsImage}

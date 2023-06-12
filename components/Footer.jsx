@@ -18,8 +18,8 @@ const Footer = () => {
     <footer className="bg-gray-50">
       <div className="mx-auto grid grid-cols-12 max-w-screen-xl gap-y-8 md:gap-x-12 px-6 py-10">
         <div className="max-w-sm col-span-12 md:col-span-3">
-          <div className="mb-6 flex h-12 items-center space-x-2">
-            <span className="text-2xl font-bold">
+          <div className="flex">
+            <span className="">
               <Image src={logoImage} alt="logoImage" className="w-32" />
             </span>
           </div>
@@ -56,23 +56,17 @@ const Footer = () => {
           <nav aria-label="Footer Navigation" className="text-gray-500">
             <ul className="space-y-3">
               <li>
-                <Link href="/" className="hover:text-blue-600 hover:underline">
+                <Link href="/" className="hover:text-primary">
                   الرئيسية
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/about"
-                  className="hover:text-blue-600 hover:underline"
-                >
+                <Link href="/about" className="hover:text-primary ">
                   من نحن
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/projects"
-                  className="hover:text-blue-600 hover:underline"
-                >
+                <Link href="/projects" className="hover:text-primary ">
                   مشاريعنا
                 </Link>
               </li>
@@ -87,15 +81,15 @@ const Footer = () => {
             <div className="mb-4">
               <input
                 type="text"
-                className="mb-2 block h-14 w-full rounded-xl bg-gray-200 px-4 outline-none"
+                className="mb-2 block h-12 w-full rounded-xl bg-gray-200 px-4 outline-none"
                 placeholder="الاسم"
               />
               <input
                 type="tel"
-                className="mb-2 block h-14 w-full rounded-xl bg-gray-200 px-4 outline-none"
+                className="mb-2 block h-12 w-full rounded-xl bg-gray-200 px-4 outline-none"
                 placeholder="رقم الجوال"
               />
-              <button className=" block rounded-lg bg-slate-900 hover:bg-gray-800 px-6 py-3 font-medium text-white">
+              <button className=" block rounded-lg bg-slate-900 hover:bg-gray-800 px-6 py-2 font-medium text-white">
                 سجل اهتمامك
               </button>
             </div>
@@ -108,7 +102,7 @@ const Footer = () => {
 
       <div className="mx-auto flex max-w-screen-xl px-4 py-3 text-center text-gray-500 justify-center">
         {/* <p className="text-center">© 2023 Valley | جميع الحقوق محفوظة </p> */}
-        <p className="text-center"> جميع الحقوق محفوظة |  2023 Valley ©</p>
+        <p className="text-center"> جميع الحقوق محفوظة | 2023 Valley ©</p>
       </div>
     </footer>
   );
