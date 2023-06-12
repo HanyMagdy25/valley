@@ -81,12 +81,12 @@ const Footer = () => {
             <div className="mb-4">
               <input
                 type="text"
-                className="mb-2 block h-12 w-full rounded-xl bg-gray-200 px-4 outline-none"
+                className="mb-2 block h-12 w-full rounded-lg bg-gray-200 px-4 outline-none"
                 placeholder="الاسم"
               />
               <input
                 type="tel"
-                className="mb-2 block h-12 w-full rounded-xl bg-gray-200 px-4 outline-none"
+                className="mb-2 block h-12 w-full rounded-lg bg-gray-200 px-4 outline-none"
                 placeholder="رقم الجوال"
               />
               <button className=" block rounded-lg bg-slate-900 hover:bg-gray-800 px-6 py-2 font-medium text-white">

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import heroImage from "../assets/hero.jpg";
 import heroImage1 from "../assets/hero1.jpg";
+import stat from "../assets/stat.jpg";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -51,7 +52,7 @@ const Hero = () => {
           <div>
             <div className="w-full h-[400px] md:h-[500px] ">
               <Image
-                src={heroImage}
+                src={stat}
                 alt="hero"
                 className="w-full h-full object-cover"
                 priority

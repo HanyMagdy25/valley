@@ -23,8 +23,8 @@ export default function Home() {
         <Navbar/>
         <Hero/>
         <Slider/>
+        <Statics/>
         <Provide/>
-        {/* <Statics/> */}
         <Advantages/>
         <Footer/>
         <Whats/>
