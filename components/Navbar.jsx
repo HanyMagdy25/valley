@@ -54,7 +54,7 @@ const Navbar = () => {
   return (
     <header
       className="w-full font-medium flex items-center justify-between
-      relative px-8 py-1  z-10  md:px-12 sm:px-8 shadow-lg" 
+      relative px-8 py-4  z-10  md:px-12 sm:px-8 shadow-lg" 
     >
       <button
         className="flex lg:hidden flex-col justify-center items-center"
@@ -135,11 +135,11 @@ const Navbar = () => {
       ) : null}
 
       {/* <Logo /> */}
-      <div className="flex lg:hidden ">
+      <Link href="/" className="flex lg:hidden ">
         <span className="text-2xl font-bold">
           <Image src={logoImage} alt="logoImage" className="w-24" />
         </span>
-      </div>
+      </Link>
     </header>
   );
 };

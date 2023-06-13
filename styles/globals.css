@@ -15,3 +15,7 @@ body {
   width: 35px !important;
   border-radius: 20px !important;
 }
+/* map::before{
+  background: linear-gradient(0deg, transparent, #fff);
+  z-index: 6;
+} */

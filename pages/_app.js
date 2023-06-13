@@ -10,7 +10,7 @@ const cairo = Cairo({
 function MyApp({ Component, pageProps }) {
   return (
     <main className={`${cairo.variable} font-cairo`}>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </main>
   );
 }

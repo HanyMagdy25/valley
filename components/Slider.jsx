@@ -1,7 +1,7 @@
 import Image from "next/image";
 // import { cards } from "../utils/data";
 // import heroImage from "../assets/hero.jpg";
-import heroImage1 from "../assets/hero1.jpg";
+// import heroImage1 from "../assets/hero1.jpg";
 import { hoverCardsData } from "../utils/data";
 
 const CardHover = ({ item }) => {
@@ -38,7 +38,7 @@ const Slider = () => {
       <div className="container m-auto px-6">
         <div className="grid w-full grid-cols-12 gap-7 md:gap-12">
           {hoverCardsData.map((item) => (
-            <CardHover item={item} />
+            <CardHover item={item} key={item.id} />
           ))}
           {/* <CardHover /> */}
           {/* <CardHover /> */}

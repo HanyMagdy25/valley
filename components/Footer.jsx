@@ -18,11 +18,11 @@ const Footer = () => {
     <footer className="bg-gray-50">
       <div className="mx-auto grid grid-cols-12 max-w-screen-xl gap-y-8 md:gap-x-12 px-6 py-10">
         <div className="max-w-sm col-span-12 md:col-span-3">
-          <div className="flex">
+          <Link href="/" className="flex mb-3">
             <span className="">
               <Image src={logoImage} alt="logoImage" className="w-32" />
             </span>
-          </div>
+          </Link>
           <div className="text-gray-500">
             هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
           </div>
@@ -30,11 +30,11 @@ const Footer = () => {
         <div className="col-span-6 md:col-span-3">
           <div className="mt-4 mb-2 font-medium xl:mb-4">تواصل معنا</div>
           <div className="text-gray-500">
-            <div class="mt-6 lg:mb-0 mb-6 flex flex-wrap gap-2">
+            <div className="mt-6 lg:mb-0 mb-6 flex flex-wrap gap-2">
               {socialMedia.map((item) => (
                 <span
                   key={item.id}
-                  class="bg-white text-lightBlue-600 shadow-lg font-normal 
+                  className="bg-white text-lightBlue-600 shadow-lg font-normal 
                     h-10 w-10 flex items-center justify-center align-center rounded-full 
                     cursor-pointer"
                 >
@@ -51,7 +51,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-6 md:col-span-3">
+        <div className="col-span-6 md:col-span-3 pr-1">
           <div className="mt-4 mb-2 font-medium xl:mb-4">روابط سريعة</div>
           <nav aria-label="Footer Navigation" className="text-gray-500">
             <ul className="space-y-3">
@@ -97,7 +97,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container m-auto px-6">
-        <hr class="my-2 border-gray-200 mx-auto dark:border-gray-300 "></hr>
+        <hr className="my-2 border-gray-200 mx-auto dark:border-gray-300 "></hr>
       </div>
 
       <div className="mx-auto flex max-w-screen-xl px-4 py-3 text-center text-gray-500 justify-center">
@@ -105,7 +105,7 @@ const Footer = () => {
         <p className="text-center"> جميع الحقوق محفوظة | 2023 Valley ©</p>
       </div>
     </footer>
-  );
+  )
 };
 
 export default Footer;
