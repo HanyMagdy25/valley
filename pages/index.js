@@ -9,6 +9,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Whats from '../components/Whats'
 import Map from '../components/Map'
+import { AfterPurchase } from '../components/AfterPurchase'
 
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
         <Statics/>
         <Provide/>
         <Advantages/>
+        <AfterPurchase/>
         <Map/>
         <Footer/>
         <Whats/>

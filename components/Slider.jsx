@@ -1,15 +1,36 @@
 import Image from "next/image";
-// import { cards } from "../utils/data";
 // import heroImage from "../assets/hero.jpg";
 // import heroImage1 from "../assets/hero1.jpg";
 import { hoverCardsData } from "../utils/data";
+import React, { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const CardHover = ({ item }) => {
+  const squareVariants = {
+    visible: { y: 0, transition: { duration: 0.8 } },
+    hidden: { y: 50 },
+  };
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
-    <div className="col-span-12 md:col-span-6 lg:col-span-4 group relative  h-96 w-full overflow-hidden rounded-lg shadow-custom">
+    <motion.div
+      ref={ref}
+      animate={controls}
+      initial="hidden"
+      transition={"easeInOut"}
+      variants={squareVariants}
+      className="col-span-12 sm:col-span-6 lg:col-span-4 group relative  h-96 w-full overflow-hidden rounded-lg shadow-custom"
+    >
       <div className="absolute left-0 top-0 h-full w-full transition-all duration-300 ease-in-out group-hover:-top-96">
         <Image
-          className="h-4/6 w-full object-cover"
+          className="h-4/6 w-full object-cover shadow-lg"
           src={item.imageUrl}
           alt="heroImage"
           priority
@@ -28,7 +49,7 @@ const CardHover = ({ item }) => {
         </h1>
         <p className="px-8 text-center">{item.bigDescription}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -40,8 +61,6 @@ const Slider = () => {
           {hoverCardsData.map((item) => (
             <CardHover item={item} key={item.id} />
           ))}
-          {/* <CardHover /> */}
-          {/* <CardHover /> */}
         </div>
       </div>
     </div>

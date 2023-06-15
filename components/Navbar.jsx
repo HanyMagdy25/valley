@@ -80,7 +80,7 @@ const Navbar = () => {
       <div className="w-full  hidden lg:flex">
         <div className="container m-auto px-6 flex justify-between items-center">
           <nav>
-            <CustomLink href="/" title="الرئيسية" className="mr-4" />
+            <CustomLink href="/" title="الرئيسية" className="ml-4" />
             <CustomLink href="/about" title="من نحن" className="mx-4" />
             <CustomLink href="/projects" title="مشاريعنا" className="mx-4" />
           </nav>
