@@ -8,8 +8,8 @@ import { useInView } from "react-intersection-observer";
 
 const CardHover = ({ item }) => {
   const squareVariants = {
-    visible: { y: 0, transition: { duration: 0.8 } },
-    hidden: { y: 50 },
+    visible: { y: 0,opacity:1, transition: { duration: 0.8 } },
+    hidden: { y: 50 ,opacity:0},
   };
   const controls = useAnimation();
   const [ref, inView] = useInView();
