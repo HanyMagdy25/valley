@@ -38,10 +38,10 @@ const Hero = () => {
                   {item.title}
                 </h2> */}
               </div>
-              <div
+              {/* <div
                 className="absolute bottom-0 w-full h-1/5 z-20 
                   bg-gradient-to-b from-transparent to-white"
-              />
+              /> */}
             </div>
           </SwiperSlide>
         ))}

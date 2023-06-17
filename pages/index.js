@@ -10,6 +10,7 @@ import Footer from '../components/Footer'
 import Whats from '../components/Whats'
 import Map from '../components/Map'
 import { AfterPurchase } from '../components/AfterPurchase'
+import Guarantee from '../components/Guarantee'
 
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
         <Slider/>
         <Statics/>
         <Provide/>
+        <Guarantee/>
         <Advantages/>
         <AfterPurchase/>
         <Map/>

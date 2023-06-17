@@ -8,6 +8,12 @@ import stat from "../assets/stat.jpg";
 import homeIcon from "../assets/home.png";
 import homesIcon from "../assets/homes.png";
 import blocksIcon from "../assets/blocks.png";
+// Image guarntee
+import electIcon from "../assets/guarantee/plug.png";
+import shield2Icon from "../assets/guarantee/shield1.png";
+import elevator1Icon from "../assets/guarantee/elevator1.png";
+import structureIcon from "../assets/guarantee/structure.png";
+import pipeIcon from "../assets/guarantee/pipe.png";
 // Image
 import floorImage from "../assets/advantages/floor.png";
 import doorImage from "../assets/advantages/door.png";
@@ -144,6 +150,38 @@ export const cardProvideData = [
     image: homeIcon,
     title: "عدد الفلل ",
     num: 2,
+  },
+];
+export const cardGuaranteeData = [
+  {
+    id: 1,
+    image: electIcon,
+    title: "طيلون كهرباء",
+    num: 10,
+  },
+  {
+    id: 2,
+    image: shield2Icon,
+    title: "ضمان شامل",
+    num: 2,
+  },
+  {
+    id: 3,
+    image: elevator1Icon,
+    title: "المصعد",
+    num: 3,
+  },
+  {
+    id: 4,
+    image: structureIcon,
+    title: "الهيكل الانشائي",
+    num: 10,
+  },
+  {
+    id: 5,
+    image: pipeIcon,
+    title: "المواسير",
+    num: 5,
   },
 ];
 

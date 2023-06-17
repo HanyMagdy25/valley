@@ -36,7 +36,7 @@ const CardProvide = ({ item }) => {
 };
 const Provide = () => {
   return (
-    <div className="bg-secondColor w-full py-10">
+    <div className="bg-secondColor w-full py-16">
       <div className="container m-auto px-6">
         <div className="grid w-full grid-cols-12 gap-7 md:gap-12">
           {cardProvideData.map((item) => (

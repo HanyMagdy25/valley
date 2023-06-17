@@ -55,7 +55,7 @@ const CardHover = ({ item }) => {
 
 const Slider = () => {
   return (
-    <div className=" w-full py-14">
+    <div className="w-full py-14 mt-8 mb-8">
       <div className="container m-auto px-6">
         <div className="grid w-full grid-cols-12 gap-7 md:gap-12">
           {hoverCardsData.map((item) => (
