@@ -11,6 +11,7 @@ import Whats from '../components/Whats'
 import Map from '../components/Map'
 import { AfterPurchase } from '../components/AfterPurchase'
 import Guarantee from '../components/Guarantee'
+import Price from '../components/Price'
 
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
         <Guarantee/>
         <Advantages/>
         <AfterPurchase/>
+        <Price/>
         <Map/>
         <Footer/>
         <Whats/>

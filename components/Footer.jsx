@@ -81,17 +81,19 @@ const Footer = () => {
             <div className="mb-4">
               <input
                 type="text"
-                className="mb-2 block h-12 w-full rounded-lg bg-gray-200 px-4 outline-none"
+                className="mb-2 block h-12 w-full rounded-md bg-gray-200 px-4 outline-none"
                 placeholder="الاسم"
               />
               <input
                 type="tel"
-                className="mb-2 block h-12 w-full rounded-lg bg-gray-200 px-4 outline-none"
+                className="mb-2 block h-12 w-full rounded-md bg-gray-200 px-4 outline-none"
                 placeholder="رقم الجوال"
               />
-              <button className=" block rounded-lg bg-slate-900 hover:bg-gray-800 px-6 py-2 font-medium text-white">
+                <button className="group relative overflow-hidden rounded-md bg-slate-900 hover:bg-gray-800 px-6 py-2 font-medium text-white">
                 سجل اهتمامك
+                <div className="absolute duration-300 inset-0 w-full h-full transition-all scale-0 group-hover:scale-100 group-hover:bg-white/20 rounded-md" />
               </button>
+              
             </div>
           </div>
         </div>
