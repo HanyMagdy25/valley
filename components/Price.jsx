@@ -1,6 +1,7 @@
 import Image from "next/image";
 import priceImage from "../assets/price.jpg";
 import houseImage from "../assets/house.png";
+import logoImage from "../assets/logo.png";
 
 const Price = () => {
   return (
@@ -43,7 +44,19 @@ const Price = () => {
                 </h2>
               </div>
             </div>
-            <div className="flex flex-wrap gap-3 mt-6">
+
+            <div className="flex flex-wrap gap-5 mt-8">
+              <div className="flex gap-2 mb-2">
+                <h2 className="text-xl font-semibold">المالك</h2>:
+                <Image src={logoImage} alt="logoImage" className="w-20" />
+              </div>
+              <div className="flex gap-2 mb-2">
+                <h2 className="text-xl font-semibold">المطور</h2>:
+                <Image src={logoImage} alt="logoImage" className="w-20" />
+              </div>
+            </div>
+
+            <div className="flex flex-wrap gap-3 mt-4">
               <button className="group relative overflow-hidden rounded-md bg-slate-900 hover:bg-gray-800 px-6 py-2 font-medium text-white">
                 صور الوحدة
                 <div className="absolute duration-300 inset-0 w-full h-full transition-all scale-0 group-hover:scale-100 group-hover:bg-white/20 rounded-md" />
