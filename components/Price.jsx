@@ -1,11 +1,26 @@
 import Image from "next/image";
+import React, { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import priceImage from "../assets/price.jpg";
 import houseImage from "../assets/house.png";
 import logoImage from "../assets/logo.png";
 
 const Price = () => {
+  const squareVariants = {
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+    hidden: { opacity: 0, x: -50 },
+  };
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
-    <div className="w-full bg-gray-50 pb-14">
+    <section className="w-full bg-gray-50 pb-14 overflow-hidden">
       <div className="container m-auto px-6">
         <div className="mx-auto pt-14 pb-10 block text-center">
           <h2 className="mx-auto text-4xl font-bold md:text-4xl">
@@ -13,7 +28,14 @@ const Price = () => {
           </h2>
         </div>
         <div className="grid grid-cols-12">
-          <div className="col-span-12 py-3 sm:py-12 lg:col-span-6 lg:py-4">
+          <motion.div
+            ref={ref}
+            animate={controls}
+            initial="hidden"
+            transition={"easeInOut"}
+            variants={squareVariants}
+            className="col-span-12 py-3 sm:py-12 lg:col-span-6 lg:py-4"
+          >
             <div className="flex gap-3 items-center mb-6">
               <Image src={houseImage} alt="house" className="w-12" />
               <h2 className="font-bold text-3xl">VT4B1</h2>
@@ -66,7 +88,7 @@ const Price = () => {
                 <div className="absolute duration-300 inset-0 w-full h-full transition-all scale-0 group-hover:scale-100 group-hover:bg-white/20 rounded-md" />
               </button>
             </div>
-          </div>
+          </motion.div>
           <div className="relative col-span-12 flex py-3 sm:py-12 lg:col-span-6 lg:py-4">
             <div
               className="relative w-full flex-wrap items-start 
@@ -83,7 +105,7 @@ const Price = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
